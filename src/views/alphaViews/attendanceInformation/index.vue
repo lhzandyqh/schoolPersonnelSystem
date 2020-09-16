@@ -1,12 +1,29 @@
 <template>
   <div class="app-container">
-    <h1>这是教师权限考勤信息界面</h1>
+    <el-row>
+      <span style="font-size: 16px;font-weight: bolder">查看</span>
+      <el-date-picker
+        v-model="valuedate"
+        type="month"
+        placeholder="2020-9"
+        style="width: 7rem" >
+      </el-date-picker>
+      <span style="font-size: 16px;font-weight: bolder">考勤信息</span>
+    </el-row>
+    <el-row>
+      <el-col :span="12"> <one-chart/> </el-col>
+      <el-col :span="12"><two-chart/></el-col>
+
+    </el-row>
   </div>
 </template>
 
 <script>
+import oneChart from "./attendanceEchart/oneChart";
+import twoChart from "./attendanceEchart/twoChart";
 export default {
-  name: 'Index'
+  name: 'Index',
+  components:{twoChart, oneChart},
 }
 </script>
 

@@ -68,4 +68,7 @@ export default {
     position: absolute;
     z-index: 999;
   }
+  .app-main {
+    background-color: #f9f9f9;
+  }
 </style>

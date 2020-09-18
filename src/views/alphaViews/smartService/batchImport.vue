@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <div style="background-color: white;padding: 20px">
     <el-row :gutter="20">
       <div style="display: flex;align-items: center;margin: 15px 0;">
         <div style="font-size: 14px;margin: 0 15px;font-weight: bolder">导入类别:</div>
@@ -47,6 +48,7 @@
         <el-button type="primary" @click="submitUpload()">提交</el-button>
       </span>
     </el-dialog>
+    </div>
   </div>
 </template>
 

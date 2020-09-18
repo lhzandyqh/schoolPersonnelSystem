@@ -13,7 +13,7 @@ import Layout from '@/views/layout/Layout'
 // import treeTableRouter from './modules/tree-table'
 // import nestedRouter from './modules/nested'
 
-/** note: sub-menu only appear when children.length>=1
+/** note: subTable-menu only appear when children.length>=1
  *  detail see  https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
  **/
 
@@ -26,7 +26,7 @@ import Layout from '@/views/layout/Layout'
 * name:'router-name'             the name is used by <keep-alive> (must set!!!)
 * meta : {
     roles: ['admin','editor']    will control the page roles (you can set multiple roles)
-    title: 'title'               the name show in sub-menu and breadcrumb (recommend set)
+    title: 'title'               the name show in subTable-menu and breadcrumb (recommend set)
     icon: 'svg-name'             the icon show in the sidebar
     noCache: true                if true, the page will no be cached(default is false)
     breadcrumb: false            if false, the item will hidden in breadcrumb(default is true)
@@ -273,7 +273,7 @@ export const asyncRoutes = [
         name: 'onekeyexport',
         meta: {
           title: '一键导出',
-          roles: ['系部主管', '人事处主管', '教师'] // or you can only set roles in sub nav
+          roles: ['系部主管', '人事处主管', '教师'] // or you can only set roles in subTable nav
         }
       },
       {
@@ -282,7 +282,7 @@ export const asyncRoutes = [
         name: 'batchimport',
         meta: {
           title: '批量导入',
-          roles: ['人事处主管', '系部主管'] // or you can only set roles in sub nav
+          roles: ['人事处主管', '系部主管'] // or you can only set roles in subTable nav
         }
       },
       {
@@ -291,7 +291,7 @@ export const asyncRoutes = [
         name: 'documentdownload',
         meta: {
           title: '文件下载',
-          roles: ['教师', '系部主管'] // or you can only set roles in sub nav
+          roles: ['教师', '系部主管'] // or you can only set roles in subTable nav
         }
       },
       {
@@ -300,7 +300,7 @@ export const asyncRoutes = [
         name: 'smartimport',
         meta: {
           title: '文件库',
-          roles: ['人事处主管', '系部主管'] // or you can only set roles in sub nav
+          roles: ['人事处主管', '系部主管'] // or you can only set roles in subTable nav
         }
       }
     ]
@@ -334,7 +334,7 @@ export const asyncRoutes = [
   //       name: 'PagePermission',
   //       meta: {
   //         title: 'pagePermission',
-  //         roles: ['人事处主管', '系部主管'] // or you can only set roles in sub nav
+  //         roles: ['人事处主管', '系部主管'] // or you can only set roles in subTable nav
   //       }
   //     },
   //     {

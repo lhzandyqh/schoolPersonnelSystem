@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <div style="background-color: white;padding: 20px">
     <el-row>
       <span style="font-size: 16px;font-weight: bolder">查看</span>
       <el-date-picker
@@ -10,6 +11,7 @@
       </el-date-picker>
       <span style="font-size: 16px;font-weight: bolder">工资信息</span>
     </el-row>
+<!--      <el-divider/>-->
     <div style="font-size: 16px;font-weight: bolder;text-align: center">
       <span style="">应发薪酬部分</span>
     </div>
@@ -113,6 +115,7 @@
         <el-col :span="12" style="margin-top: 23px"> <chart-one/></el-col>
         <el-col :span="12"><chart-two/></el-col>
       </el-row>
+    </div>
     </div>
   </div>
 </template>

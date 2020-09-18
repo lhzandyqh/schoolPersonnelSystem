@@ -1,15 +1,45 @@
 <template>
   <div class="app-container">
-    <h1>这是教师权限审核提交界面</h1>
+    <div style="background-color: white;padding: 20px">
+      <div class="select">
+        <el-row>
+          <span style="font-size: 16px;font-weight: bolder">选择审核提交类型：</span>
+          <el-select v-model="type_select_value" placeholder="请选择您的审核提交类型">
+            <el-option label="个人信息" value="people" />
+            <el-option label="工作任务" value="work" />
+          </el-select>
+        </el-row>
+      </div>
+      <el-divider />
+      <el-row v-if="type_select_value === 'people'">
+        <basic-table/>
+      </el-row>
+      <el-row v-if="type_select_value === 'work'">
+        <work-table/>
+      </el-row>
+    </div>
   </div>
 </template>
 
 <script>
+import basicTable from "./subTable/basicTable";
+import workTable from "./subTable/workTable";
 export default {
-  name: 'Index'
+  name: 'Index',
+  components: {
+    basicTable,workTable
+  },
+  data() {
+    return {
+      type_select_value: 'people',
+      value: ''
+    }
+  }
 }
 </script>
 
 <style scoped>
-
+.select {
+  background-color: white;
+}
 </style>

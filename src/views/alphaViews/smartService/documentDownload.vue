@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <div style="background-color: white;padding: 20px">
     <el-row>
       <el-tabs>
         <el-tab-pane label="个人信息">
@@ -149,6 +150,7 @@
           <iframe :src="pathUr" width="100%" height="100%" style="position:static;left: 0px;top: 40px;" frameborder="0"></iframe>
         </el-card>
       </el-dialog>
+    </div>
     </div>
   </div>
 </template>

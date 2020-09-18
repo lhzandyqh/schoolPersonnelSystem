@@ -30,7 +30,6 @@
         :total="peopleData.length"
         layout="total, sizes, prev, pager, next, jumper"
       />
-    </div>
     <hr style="margin: 30px 0 30px 0"/>
     <div style="margin: 0 0 10px 0;font-size: 16px;font-weight: bolder;text-align: center;">
       <span style="">参加比赛情况</span>
@@ -381,6 +380,7 @@
           <el-button type="primary" @click="changFurtherSuccess">确 定</el-button>
         </div>
       </el-dialog>
+    </div>
     </div>
   </div>
 </template>
